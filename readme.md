@@ -10,6 +10,8 @@ Task List Functions:
 4. delete("/tasks/delete/{task_id}"): press try out to delete tasks. If you want to delete a task add the associated task id and execute to delete.
 
 Dockerfile:
-build the image: docker build -t tasksqlalchemy .
-run the container: docker run -d -p 8000:80 --name task-container tasksqlalchemy
-use http://localhost:8000/docs to access the api
+
+1.build the image: docker build -t tasksqlalchemy .
+2.run the container: docker run -d -p 8000:80 --name task-container tasksqlalchemy
+3.use http://localhost:8000/docs to access the api
+
