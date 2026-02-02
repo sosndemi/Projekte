@@ -19,7 +19,6 @@ class TaskDB(Base):
 
 Base.metadata.create_all(bind=engine)
 
-
 app = FastAPI()
 
 
@@ -85,4 +84,5 @@ def delete_task(db: Session, task_id: int):
 
 @app.delete("/tasks/delete/{task_id}")
 def deletetask(task_id: int, db: Session = Depends(get_db)):
+
     return delete_task(db, task_id)
